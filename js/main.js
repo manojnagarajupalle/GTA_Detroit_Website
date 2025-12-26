@@ -35,4 +35,14 @@ document.addEventListener('DOMContentLoaded', () => {
             navLinks.classList.remove('active');
         }
     });
+
+    // Image Protection (Disable Right-Click and Drag)
+    document.querySelectorAll('img').forEach(img => {
+        img.addEventListener('contextmenu', (e) => {
+            e.preventDefault();
+        });
+        img.addEventListener('dragstart', (e) => {
+            e.preventDefault();
+        });
+    });
 });

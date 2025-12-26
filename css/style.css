@@ -406,3 +406,13 @@ footer {
         height: 200px;
     }
 }
+/* Image Protection */
+img {
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+    user-drag: none;
+    pointer-events: auto; /* Allows clicking but prevents simple dragging */
+    user-select: none; /* Prevents selection */
+}
