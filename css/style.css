@@ -416,3 +416,17 @@ img {
     pointer-events: auto; /* Allows clicking but prevents simple dragging */
     user-select: none; /* Prevents selection */
 }
+
+/* Specific protection for committee members - blocks all mouse interaction on the image itself */
+.committee-member-img {
+    pointer-events: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+    user-drag: none;
+}
