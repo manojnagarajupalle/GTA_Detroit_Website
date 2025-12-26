@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events - GTA Detroit</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .event-card {
+            display: flex;
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+            flex-direction: column;
+        }
+
+        @media(min-width: 768px) {
+            .event-card {
+                flex-direction: row;
+            }
+
+            .event-img {
+                width: 300px;
+                flex-shrink: 0;
+            }
+        }
+
+        .event-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            min-height: 200px;
+        }
+
+        .event-details {
+            padding: 25px;
+            flex-grow: 1;
+        }
+
+        .event-date {
+            color: var(--secondary-color);
+            font-weight: 700;
+            text-transform: uppercase;
+            font-size: 14px;
+            margin-bottom: 10px;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="thoranam"></div>
+
+    <!-- Header -->
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <!-- Logo -->
+                <img src="images/logo.png" alt="GTA Detroit Logo">
+                <span>Detroit Chapter</span>
+            </a>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="events.html" class="active">Events</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#" class="donate-btn">Donate</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section style="background-color: var(--light-grey); padding: 40px 0;">
+        <div class="container text-center">
+            <h1 style="color: var(--primary-color);">Upcoming Events</h1>
+        </div>
+    </section>
+
+    <section>
+        <div class="container" style="max-width: 900px;">
+            <!-- Event 1 -->
+            <div class="event-card">
+                <div class="event-img">
+                    <img src="https://placehold.co/400x300?text=Bathukamma" alt="Event Image">
+                </div>
+                <div class="event-details">
+                    <span class="event-date">Oct 15, 2025</span>
+                    <h3 style="font-size: 24px; margin-bottom: 10px;">Bathukamma Festival</h3>
+                    <p style="margin-bottom: 20px; color: #666;">Join us for the grand celebration of Bathukamma with
+                        traditional songs and dance.</p>
+                    <a href="#" class="cta-btn" style="padding: 8px 20px; font-size: 14px;">View Details</a>
+                </div>
+            </div>
+
+            <!-- Event 2 -->
+            <div class="event-card">
+                <div class="event-img">
+                    <img src="https://placehold.co/400x300?text=Picnic" alt="Event Image">
+                </div>
+                <div class="event-details">
+                    <span class="event-date">July 20, 2025</span>
+                    <h3 style="font-size: 24px; margin-bottom: 10px;">Community Picnic</h3>
+                    <p style="margin-bottom: 20px; color: #666;">A fun-filled day with games, food, and networking for
+                        all families.</p>
+                    <a href="#" class="cta-btn" style="padding: 8px 20px; font-size: 14px;">View Details</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>GTA Detroit</h3>
+                    <p>Connecting Global Telangana Community.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Info</h3>
+                    <p>Email: contact@globaltelangana.org</p>
+                    <p>Detroit, Michigan, USA</p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Global Telangana Association Detroit Chapter. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
