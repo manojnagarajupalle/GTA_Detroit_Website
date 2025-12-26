@@ -1,4 +1,4 @@
-# Global Telangana Association - Detroit Chapter
+# Global Telangana Association - Detroit Chapter 
 
 Welcome to the official repository for the Global Telangana Association (GTA) Detroit Chapter website. This platform serves to connect the Telangana community in Detroit, share event updates, and provide resources for our members.
 
